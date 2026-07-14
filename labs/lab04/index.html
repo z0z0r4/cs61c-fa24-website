@@ -213,13 +213,13 @@ fatal: Could not read from remote repository.
 <p>Still in your <code>labs</code> directory, run the following command to download the newest version of some tools we may need:</p>
 <pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">bash</span></span><span class="z-meta z-function-call z-arguments z-shell"> tools/download_tools.sh</span>
 </span></code></pre>
-<p>If you run into any <code>git</code> errors, please check out the <a href="https://cs61c.org/fa24/resources/common-errors/">common errors</a> page.</p>
+<p>If you run into any <code>git</code> errors, please check out the <a href="../../resources/common-errors/index.html">common errors</a> page.</p>
 <h3 id="venus">Venus</h3>
-<p>Like lab 3, we will be using the <a href="https://venus.cs61c.org/">Venus RISC-V simulator</a>. Also, please refer to the <a href="https://cs61c.org/fa24/resources/venus-reference/">Venus reference</a> on our course website when you need a refresher on any of the Venus features.</p>
+<p>Like lab 3, we will be using the <a href="https://venus.cs61c.org/">Venus RISC-V simulator</a>. Also, please refer to the <a href="../../resources/venus-reference/index.html">Venus reference</a> on our course website when you need a refresher on any of the Venus features.</p>
 <p>Mount the lab 4 files as you did with <a href="../lab03/index.html#exercise-1-venus-basics">Lab 3</a>.</p>
 <hr/>
 <h2 id="calling-convention">Calling Convention</h2>
-<p>Here is an <a href="https://cs61c.org/fa24/projects/proj2/calling-convention/">appendix on calling convention</a>. We recommend reading over it if you are not feeling comfortable, since correct calling convention is crucial for RISC-V programming.</p>
+<p>Here is an <a href="../../projects/proj2/calling-convention/index.html">appendix on calling convention</a>. We recommend reading over it if you are not feeling comfortable, since correct calling convention is crucial for RISC-V programming.</p>
 <p>Other great resources that we recommend getting familiar with are lab slides and <a href="https://cs61c.org/su24/lectures/lec07/">calling convention lecture</a> in order to understand the motivation behind calling convention.</p>
 <p>We have provided two practical walkthroughs of calling convention (CC) below. We understand that these examples are long, but they will help you get an idea of how to follow calling convention when writing RISC-V, and make this lab much easier to solve.</p>
 <h3 id="example-putting-it-into-practice">Example: Putting It Into Practice</h3>
@@ -536,7 +536,7 @@ exit:
 
 </div>
 <p>Calling convention errors can cause bugs in your code that are difficult to find. The calling convention checker is used to detect calling convention violations in your code. However, it is <strong>not</strong> comprehensive. In this exercise, you will use the calling convention checker to fix some calling convention issues.</p>
-<p><strong>Note:</strong> Venus's calling convention checker will not report all calling convention bugs; it is intended to be used primarily as a basic check. Most importantly, <strong>it will only look for bugs in functions that are exported with the <code>.globl</code> directive</strong> - the meaning of <code>.globl</code> is explained in more detail in the <a href="https://cs61c.org/fa24/resources/venus-reference/#working-with-multiple-files">Venus reference</a>.</p>
+<p><strong>Note:</strong> Venus's calling convention checker will not report all calling convention bugs; it is intended to be used primarily as a basic check. Most importantly, <strong>it will only look for bugs in functions that are exported with the <code>.globl</code> directive</strong> - the meaning of <code>.globl</code> is explained in more detail in the <a href="../../resources/venus-reference/index.html#working-with-multiple-files">Venus reference</a>.</p>
 <ol>
 <li>To enable the calling convention checker, <strong>click</strong> on the Venus tab at the top of the page, and <strong>click</strong> &quot;Enable&quot; for the &quot;Calling Convention&quot; row under the &quot;Settings&quot; pane.
 <ul>
@@ -565,7 +565,7 @@ Found 12 warnings!
 Error:
 `StoreError: You are attempting to edit the text of the program though the program is set to immutable at address 0x00000006!
 </span></code></pre>
-<p>More information about these errors can be found in the <a href="https://cs61c.org/fa24/resources/venus-reference/#calling-convention-checker">Venus reference</a>.</p>
+<p>More information about these errors can be found in the <a href="../../resources/venus-reference/index.html#calling-convention-checker">Venus reference</a>.</p>
 <h3 id="exercise-1-1-examine-the-code">Exercise 1.1: Examine the Code</h3>
 <p>Read through <code>ex1.s</code>. Make sure you have the answer to the following questions.</p>
 <details>
